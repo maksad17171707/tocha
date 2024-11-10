@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html lang="ru">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="./registradsiya.css">  
+    <title>Регистрация</title>  
+</head>  
+<body>  
+    <div class="modal">  
+        <button class="close-btn">&#10006;</button>  
+        <h1>Регистрация</h1>  
+        <form>  
+            <input type="tel" placeholder="Телефон" required>  
+            <input type="email" placeholder="Электронная почта" required>  
+            <div class="password-field">  
+                <input type="password" id="password" placeholder="Пароль" required>  
+                <button type="button" class="toggle-password" onclick="togglePassword('password')">👁️</button>
+            </div>  
+            <div class="password-field">  
+                <input type="password" id="confirm-password" placeholder="Повторите пароль" required>  
+                <button type="button" class="toggle-password" onclick="togglePassword('confirm-password')">👁️</button>
+            </div>  
+            <button type="submit" class="submit-btn"><a href="./vihod.html">Войти</a></button>  
+        </form>  
+    </div>  
+    
+    <script src="./js/app.js">
+      </script> 
+</body>  
+</html>
